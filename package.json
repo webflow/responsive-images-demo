@@ -1,0 +1,18 @@
+{
+  "name": "responsive-images-demo",
+  "version": "1.0.0",
+  "description": "On Automating responsive images",
+  "engines" : { "node" : ">=6.9.4" },
+  "scripts": {
+    "start": "VIPS_WARNING=false node ./index.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "chromedriver": ">=2.37.0",
+    "del": "2.2.2",
+    "image-size": "0.5.1",
+    "selenium-webdriver": "3.3.0",
+    "sharp": "0.17.3",
+    "step": "1.0.0"
+  }
+}

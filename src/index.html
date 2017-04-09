@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		img {
+			max-width: 100%;
+		}
+
+		.halfwidth {
+			width: 50%;
+		}
+
+		.container_1 {
+			margin: 0 100px;
+		}
+
+		.block_1 {
+			width: 50px;
+			height: 50px;
+			background: #000;
+		}
+
+		@media (min-width: 0px) {
+			#img_4 {
+				width: 200px;
+			}
+		}
+
+		@media (min-width: 480px) {
+			#img_4 {
+				width: 80vw;
+			}
+		}
+
+		@media (min-width: 780px) {
+			#img_4 {
+				width: 43%;
+			}
+		}
+
+		@media (min-width: 992px) {
+			#img_4 {
+				width: calc(500px + 10%);
+			}
+		}
+
+		@media (min-width: 1200px) {
+			#img_4 {
+				width: 500px;
+			}
+		}
+
+		#img_5 {
+			width: 50vw;
+		}
+
+		#img_5:hover {
+			width: 80vw;
+		}
+
+		.container_2 {
+			width: 450px;
+		}
+
+		.container_2:hover {
+			width: 100%;
+		}
+		
+	</style>
+</head>
+<body>
+<img id="img_1" src="images/beach.jpg">
+<img id="img_2" class="halfwidth" src="images/cherrytrees.jpg">
+
+<div class="container_1">
+	<p>This one is tricky, can you tweak index.js to generate a calc? Or use css to overcome intrinsic size effect.</p>
+	<img id="img_3" src="images/countryside.jpg">
+</div>
+
+<p>This one behaves differently under different media queries</p>
+<img id="img_4" src="images/hills.jpg">
+
+<p>These two have hover effects. Can you test all the possible interactive effects of neighbouring elements. Or perhaps
+indicate the max size this element will render in a media query via data-attributes</p>
+<img id="img_5" src="images/leaf.jpg">
+
+<div class="container_2">
+	<img id="img_6" src="images/lemon.jpg">
+</div>
+
+<p>Can you come up with your own edge cases to test. Perhaps a flexbox container where the image's size is based on a neighbour</p>
+<img id="img_7" src="images/mountain.jpg">
+
+</body>
+</html>
